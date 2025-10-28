@@ -1,0 +1,47 @@
+{
+  "name": "response-package",
+  "version": "1.0.0",
+  "description": "A package to handle DynamoDB responses efficiently.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --coverage",
+    "coverage": "jest --coverage",
+    "build": "tsc",
+    "start:dev": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JgasparDevops/response-package.git"
+  },
+  "author": "jesusgaspar <jgaspar.devops@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JgasparDevops/response-package/issues"
+  },
+  "homepage": "https://github.com/JgasparDevops/response-package#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "30.0.0",
+    "@types/node": "24.0.15",
+    "jest": "30.0.4",
+    "ts-jest": "29.4.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "overrides": {
+    "glob": "10.4.5"
+  }
+}
